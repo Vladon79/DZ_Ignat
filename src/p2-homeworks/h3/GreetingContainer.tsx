@@ -1,5 +1,5 @@
 import React, { ChangeEvent, KeyboardEvent, useState } from 'react'
-import { v1 } from 'uuid'
+
 import Greeting from './Greeting'
 
 type GreetingContainerPropsType = {
@@ -37,7 +37,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUse
         // need to fix
     }
     const onKeyPressHandler = (e:KeyboardEvent<HTMLInputElement>)=>{
-        if (e.charCode=== 13) {
+        if (e.key=== 'Enter') {
             addUser();
         }
     }

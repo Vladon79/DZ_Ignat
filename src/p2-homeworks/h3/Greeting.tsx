@@ -9,14 +9,15 @@ type GreetingPropsType = {
     addUser: () => void // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
-    onKeyPressHandler:(e:KeyboardEvent<HTMLInputElement>)=>void
+    onKeyPressHandler: (e: KeyboardEvent<HTMLInputElement>) => void
 }
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-    { name, setNameCallback, addUser, error, totalUsers,...props } // деструктуризация пропсов
+    { name, setNameCallback, addUser, error, totalUsers, ...props } // деструктуризация пропсов
 ) => {
-    const inputClass = error? s.error : s.notError // need to fix with (?:)
+    const inputClass = error ? s.error : s.notError // need to fix with (?:)
+    const Disabled = error ? true : false
 
     return (
         <div className={s.users}>
@@ -24,15 +25,15 @@ const Greeting: React.FC<GreetingPropsType> = (
                 onChange={setNameCallback}
                 className={inputClass}
                 onKeyPress={props.onKeyPressHandler} /> */}
-                <SuperInputText 
+            <SuperInputText
                 error={error}
-                value={name} 
+                value={name}
                 onChange={setNameCallback}
                 className={inputClass}
                 onKeyPress={props.onKeyPressHandler}
-                />
-            <SuperButton onClick={addUser} className={s.button}>Add</SuperButton>
-            
+            />
+            <SuperButton onClick={addUser} className={s.button} disabled={Disabled} >Add</SuperButton>
+
             {/* <div className={s.error}>{error}</div> */}
             <div className={s.numberUsers}>Number of users={totalUsers}</div>
 
