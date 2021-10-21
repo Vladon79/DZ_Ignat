@@ -1,0 +1,19 @@
+.error {
+    padding: 90px;
+    text-align: center;
+    font-size: 100px;
+    color:red
+}
+.navlink{
+    overflow: hidden;
+}
+
+
+.navlink a{
+    font-size: 15px;
+    color: #333333;
+    text-decoration: none;
+}
+.navlink a.active{
+    color:#FF6B00
+}
