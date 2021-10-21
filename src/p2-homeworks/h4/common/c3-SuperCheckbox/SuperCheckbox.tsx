@@ -24,7 +24,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         if (onChangeChecked) {
             onChangeChecked(e.currentTarget.checked)
         }
-        else if (onChange){
+        else if (onChange) {
             onChange(e)
         }
     }
