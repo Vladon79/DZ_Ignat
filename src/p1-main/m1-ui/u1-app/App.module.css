@@ -1,0 +1,16 @@
+.App {
+    
+    background: linear-gradient( #cad6e2 40px, #3e4649 50%);
+}
+.react{
+    text-align: center;
+    font-size: 50px;
+    color:#333333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    color: #FF6B00;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}

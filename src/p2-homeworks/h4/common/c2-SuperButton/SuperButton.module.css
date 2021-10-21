@@ -1,0 +1,17 @@
+.default {
+    background-color: #FF6B00;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.default:hover{
+    background-color: #ffbb00;
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.459);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.red:hover{
+    background-color: #ff0000;
+}

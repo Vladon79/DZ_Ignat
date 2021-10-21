@@ -1,0 +1,16 @@
+.superInput {
+    font-size: 20px;
+    background-color: #838383;
+    color: #f8f8f8;
+    
+}
+
+.errorInput {
+    font-size: 20px;
+    background-color: #682a2a;
+    
+}
+
+.error {
+    color: red;
+}
