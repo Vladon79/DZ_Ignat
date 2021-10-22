@@ -1,0 +1,16 @@
+.HW6{
+    background: linear-gradient( #1b1d1f 50px, #3e4649 70%);
+    text-align: center;
+}
+.button{
+    font-size: 20px;
+    text-align: center;
+    width: 90px; 
+    height: 40px;
+    border-radius: 10%;
+}
+.text{
+    margin: 20px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
