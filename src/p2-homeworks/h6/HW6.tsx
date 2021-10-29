@@ -17,7 +17,7 @@ function HW6() {
     return (
         <div className={s.HW6}>
             <hr />
-            <h2>homeworks 6</h2>
+            <h2>Homeworks 6</h2>
 
             {/*should work (должно работать)*/}
             <div className={s.text}>
