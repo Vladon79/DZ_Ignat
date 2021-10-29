@@ -1,5 +1,6 @@
 import React from 'react'
 import { Redirect, Route, Switch } from 'react-router'
+import HW7 from '../h7/HW7'
 import Error404 from './pages/Error404'
 import PreJunior from './pages/PreJunior'
 
@@ -22,6 +23,7 @@ function Routes() {
                 
 
             {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
+            <Route path={'/HW7'} render={() => <HW7/>}/>
             <Route render={() => <Error404/>}/>
 
             </Switch>
