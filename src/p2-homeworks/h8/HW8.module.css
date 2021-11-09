@@ -1,0 +1,9 @@
+.map{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    color: #FF6B00;
+}
+
+.age{
+    color: #9d49f2;
+}

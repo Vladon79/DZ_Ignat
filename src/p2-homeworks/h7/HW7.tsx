@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import HW8 from '../h8/HW8'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 import s from './HW7.module.css'
@@ -29,6 +30,7 @@ function HW7() {
                     onChangeOption={onChangeOption}
                 />
             </div>
+            <HW8/>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
