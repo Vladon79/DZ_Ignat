@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import HW10 from '../h10/HW10'
 import HW8 from '../h8/HW8'
 import HW9 from '../h9/HW9'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
@@ -12,7 +13,7 @@ function HW7() {
 
     return (
         <div className={s.HW7}>
-            <hr/>
+            <hr />
             <h2>Homeworks 7</h2>
 
             {/*should work (должно работать)*/}
@@ -31,14 +32,14 @@ function HW7() {
                     onChangeOption={onChangeOption}
                 />
             </div>
-            <HW8/>
-            <HW9/>
-
-            <hr/>
+            <HW8 />
+            <HW9 />
+            <HW10 />
+            <hr />
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperSelect/>*/}
             {/*<AlternativeSuperRadio/>*/}
-            <hr/>
+            <hr />
         </div>
     )
 }

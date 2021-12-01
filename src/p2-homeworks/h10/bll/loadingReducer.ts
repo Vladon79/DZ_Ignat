@@ -1,14 +1,33 @@
-const initState = {
 
+type LoadingReducerType = {
+    isLoading: boolean
 }
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+type ActionType = {
+    type: 'ONCLICK-BUTTON'
+    isLoading: boolean
+}
+
+const initState = {
+    isLoading: false
+}
+
+export const loadingReducer = (state: LoadingReducerType = initState, action: ActionType): LoadingReducerType => { // fix any
     switch (action.type) {
-        case '': {
-            return state
+        case 'ONCLICK-BUTTON': {
+            const copyState = {
+                ...state,
+                isLoading: action.isLoading
+            }
+            return copyState
         }
         default: return state
     }
 }
 
-export const loadingAC = (): any => {} // fix any
+export const loadingAC = (isLoading: boolean): ActionType => {
+    return {
+        type: 'ONCLICK-BUTTON',
+        isLoading
+    }
+} // fix any
