@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className={s.header} >
             <ul className={s.navLink}>
-                <li> <NavLink to="HW7-8" activeClassName={s.active}>HW7-8</NavLink></li>
+                <li> <NavLink to="HW7-9" activeClassName={s.active}>HW7-9</NavLink></li>
                 <li> <NavLink to="junior+" activeClassName={s.active}>junior3+</NavLink></li>
                 <li> <NavLink to="pre-junior" activeClassName={s.active}>pre-junior</NavLink></li>
             </ul>
