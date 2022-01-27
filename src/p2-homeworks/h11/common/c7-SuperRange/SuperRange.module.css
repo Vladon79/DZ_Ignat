@@ -1,3 +1,10 @@
-.range {
+.slider {
+    margin: 30px;
+    height: 10px;
+    width: 300px;
+}
 
+.SuperRangeContainer{
+    display: flex;
+    align-items: center;
 }
