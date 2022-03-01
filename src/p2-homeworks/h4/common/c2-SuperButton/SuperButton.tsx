@@ -1,5 +1,8 @@
 import React, { ButtonHTMLAttributes, DetailedHTMLProps } from 'react'
-import s from './SuperButton.module.css'
+import s from './SuperButton.module.scss'
+import {useSelector} from "react-redux";
+import {AppStoreType} from "../../../h10/bll/store";
+import {colorThemeType} from "../../../h12/bll/themeReducer";
 
 // тип пропсов обычной кнопки, children в котором храниться название кнопки там уже описан
 type DefaultButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
@@ -14,7 +17,8 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
         ...restProps// все остальные пропсы попадут в объект restProps, там же будет children
     }
 ) => {
-    const finalClassName = `${red ? s.red : s.default} ${className}`
+    const theme = useSelector<AppStoreType, colorThemeType>(state => state.theme.themeColor)
+    const finalClassName = `${s[theme]} ${red ? s.red : s.default} ${className}`
 
     return (
 

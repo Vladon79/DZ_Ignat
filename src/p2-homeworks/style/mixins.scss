@@ -1,0 +1,14 @@
+@import 'variables';
+
+@mixin theme($colorTheme) {
+  @if $colorTheme == 'some' {
+    $themeColor: lightgreen;
+    $superComponentColor: orange
+  } @else if $colorTheme == 'red' {
+    $themeColor: lightcoral;
+    $superComponentColor: white
+  } @else if $colorTheme == 'dark' {
+    $themeColor: dimgrey;
+    $superComponentColor: darkred
+  }
+}
