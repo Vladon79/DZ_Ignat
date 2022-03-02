@@ -5,6 +5,7 @@ import HW8 from '../h8/HW8'
 import Error404 from './pages/Error404'
 import PreJunior from './pages/PreJunior'
 import HW12 from "../h12/HW12";
+import HW13 from "../h13/HW13";
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -26,7 +27,7 @@ function Routes() {
 
             {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
             <Route path={'/HW7-11'} render={() => <HW7/>}/>
-            <Route path={'/HW12'} render={() => <HW12/>}/>
+            <Route path={'/HW13'} render={() => <HW13/>}/>
 
             </Switch>
         </div>
