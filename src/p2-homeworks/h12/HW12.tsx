@@ -23,7 +23,7 @@ function HW12() {
             </span>
             {/*//<SuperRadio name={'theme'}/>*/}
             <SuperRadio
-                name={'radio'}
+                name={'radio1'}
                 options={themes}
                 value={theme}
                 onChangeOption={onChangeOption}

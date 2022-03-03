@@ -41,9 +41,7 @@ function HW7() {
             <HW12/>
 
             <hr />
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperSelect/>*/}
-            {/*<AlternativeSuperRadio/>*/}
+
             <hr />
         </div>
     )

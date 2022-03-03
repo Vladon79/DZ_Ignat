@@ -1,13 +1,25 @@
+.dark {
+    background-color: darkred;
+}
+
+.some {
+    background-color: #FF6B00;
+}
+
+.red {
+    background-color: white;
+}
+
 .superInput {
     font-size: 20px;
     background-color: #838383;
     color: #f8f8f8;
-    
+
 }
 
 .errorInput {
     font-size: 20px;
-    background-color: #682a2a;
+    /*background-color: #682a2a;*/
     
 }
 
